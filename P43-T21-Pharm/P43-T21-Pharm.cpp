@@ -39,6 +39,8 @@ int main()
 	pharm.addMedicine(b);
 	pharm.addMedicine(Medicine("Aspiryn", "pills", 20.50));
 
+
+	pharm.sortMedicinesByPrice();
 	pharm.showInfoPharm();
 
 

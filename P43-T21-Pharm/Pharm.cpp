@@ -44,3 +44,10 @@ void Pharm::sortMedicinesByPrice()
 		return left.getPrice() < right.getPrice();
 		});
 }
+
+void Pharm::sortMedicinesByType()
+{
+	sort_if<Medicine>(arrMed, sizeMed, [](Medicine left, Medicine right) { //2 - Конструктор копіювання
+		return strcmp(left.getType(), right.getType())  < 0;
+		});
+}

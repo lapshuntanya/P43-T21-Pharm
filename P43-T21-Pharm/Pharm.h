@@ -16,5 +16,6 @@ public:
 	void showInfoPharm()const;
 	void addMedicine(Medicine obj);
 	void sortMedicinesByPrice();
+	void sortMedicinesByType();
 };
 
