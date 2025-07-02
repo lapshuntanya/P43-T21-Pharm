@@ -59,19 +59,22 @@ void Medicine::setPrice(float _price)
 
 const char* Medicine::getTitle() const
 {
-	return nullptr;
+	return title;
 }
 
 const char* Medicine::getType() const
 {
-	return nullptr;
+	return type;
 }
 
 float Medicine::getPrice() const
 {
-	return 0.0f;
+	return price;
 }
 
 void Medicine::showInfo() const
 {
+	cout << "Medicine: " << title << endl;
+	cout << "Type:     " << type << endl;
+	cout << "Price:    " << price << "UAH\n\n";
 }
