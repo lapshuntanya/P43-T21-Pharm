@@ -57,20 +57,9 @@ void Medicine::setPrice(float _price)
 	}
 }
 
-const char* Medicine::getTitle() const
-{
-	return title;
-}
-
-const char* Medicine::getType() const
-{
-	return type;
-}
-
-float Medicine::getPrice() const
-{
-	return price;
-}
+const char* Medicine::getTitle() const{	return title;}
+const char* Medicine::getType() const{	return type;}
+float Medicine::getPrice() const{	return price;}
 
 void Medicine::showInfo() const
 {
