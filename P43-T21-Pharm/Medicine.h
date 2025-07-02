@@ -12,6 +12,7 @@ class Medicine
 public:
 	Medicine();
 	Medicine(const char* _title, const char* _type, float _price);
+	Medicine(const Medicine& obj); // Medicine k = a; => k=this, a= obj
 	~Medicine();
 
 	void setTitle(const char* _title);
