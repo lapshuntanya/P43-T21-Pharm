@@ -13,9 +13,8 @@ public:
 	Pharm(const char* _name);
 	~Pharm();
 
-	void showInfo()const;
+	void showInfoPharm()const;
 	void addMedicine(Medicine obj);
 	void sortMedicinesByPrice();
-
 };
 

@@ -1,4 +1,5 @@
 #include "Medicine.h"
+#include "Pharm.h"
 
 Medicine::Medicine(){
 	title = new char[10] {"undefined"};
@@ -91,9 +92,14 @@ const char* Medicine::getTitle() const{	return title;}
 const char* Medicine::getType() const{	return type;}
 float Medicine::getPrice() const{	return price;}
 
+  
+
+
 void Medicine::showInfo() const
 {
 	cout << "Medicine: " << title << endl;
 	cout << "Type:     " << type << endl;
 	cout << "Price:    " << price << "UAH\n\n";
 }
+
+
