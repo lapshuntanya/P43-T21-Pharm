@@ -1,8 +1,9 @@
-﻿ 
+﻿#include "Array_Template.h"
 #include "Medicine.h"
 
 int main()
 {
+	/*
 	Medicine a("Nurofen", "pills", 70.43);
 	Medicine b("Dr Mom", "syrope", 120.78);
 
@@ -29,6 +30,8 @@ int main()
 
 	k.showInfo();//"Nurofen", "capsules", 70.43
 	b.showInfo();//"Nurofen", "big capsules", 70.43
+	*/
+
 
 }
 
