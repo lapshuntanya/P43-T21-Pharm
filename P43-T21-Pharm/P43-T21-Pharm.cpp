@@ -16,10 +16,19 @@ int main()
 	Medicine k = a; //"Nurofen", "pills", 70.43
 	//Конструктор копіювання
 
-	k.setType("capsules");
+	k.setType("capsules");//"Nurofen", "capsules", 70.43
 
 	a.showInfo();
 	k.showInfo();
+	cout << "====================================\n";
+
+	//Оператор присвоювання
+	b = k;//"Nurofen", "capsules", 70.43
+
+	b.setType("big capsules");
+
+	k.showInfo();//"Nurofen", "capsules", 70.43
+	b.showInfo();//"Nurofen", "big capsules", 70.43
 
 }
 

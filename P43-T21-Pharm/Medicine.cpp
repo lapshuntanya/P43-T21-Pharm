@@ -32,6 +32,22 @@ Medicine::Medicine(const Medicine& obj)
 	price = obj.price;
 }
 
+Medicine& Medicine::operator=(const Medicine& obj)
+{
+	// b = a; =>    b=this,     a= obj
+	int size_title = strlen(obj.title) + 1;
+	title = new char[size_title];
+	strcpy_s(title, size_title, obj.title);
+
+	int size_type = strlen(obj.type) + 1;
+	type = new char[size_type];
+	strcpy_s(type, size_type, obj.type);
+
+	price = obj.price;
+
+	return *this;
+}
+
 Medicine::~Medicine(){
 	delete[] title;
 	delete[] type;
