@@ -25,22 +25,22 @@ Pharm::~Pharm()
 
 void Pharm::showInfoPharm() const
 {
-	cout << "Pharm: " << name << endl;
-	cout << "Amount of medicines: " << sizeMed << endl;
+	cout << "\t Pharm: " << name << endl;
+	cout << "\t Amount of medicines: " << sizeMed << endl;
 	for (int i = 0; i < sizeMed; i++)
 	{
 		arrMed[i].showInfo();
 	}
 }
 
-void Pharm::addMedicine(Medicine obj)
+void Pharm::addMedicine(Medicine obj)//Конструктор копіювання
 {
-	addItemBack(arrMed, sizeMed, obj);
+	addItemBack(arrMed, sizeMed, obj);//Конструктор копіювання
 }
 
 void Pharm::sortMedicinesByPrice()
 {
-	sort_if<Medicine>(arrMed, sizeMed, [](Medicine left, Medicine right) {
+	sort_if<Medicine>(arrMed, sizeMed, [](Medicine left, Medicine right) { //2 - Конструктор копіювання
 		return left.getPrice() < right.getPrice();
 		});
 }
